@@ -3,11 +3,8 @@ import java.io.PrintWriter;
 
 public class Day2 {
 
-    public static PrintWriter out;
-
     public static void main(String[] args) {
         MyScanner sc = new MyScanner();
-        out = new PrintWriter(new BufferedOutputStream(System.out));
         int validPasswords1 = 0;
         int validPasswords2 = 0;
 

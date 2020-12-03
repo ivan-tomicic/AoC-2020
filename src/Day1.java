@@ -3,14 +3,11 @@ import java.util.*;
 
 public class Day1 {
 
-    public static PrintWriter out;
-
     public static void main(String[] args) {
 
         List<Integer> input = new ArrayList<>();
 
         MyScanner sc = new MyScanner();
-        out = new PrintWriter(new BufferedOutputStream(System.out));
 
         while (true) {
             try{
