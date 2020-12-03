@@ -3,7 +3,6 @@ import java.util.List;
 
 public class Day3 {
 
-
     public static void main(String[] args) {
         MyScanner sc = new MyScanner();
 
@@ -31,13 +30,10 @@ public class Day3 {
                 }
                 System.out.println(right + "    " + down);
                 right = (right + slopes[i][0]) % columns;
-
-
             }
             result *= treeCounter;
             System.out.println("Trees encountered for slope {" + slopes[i][0] + ", " + slopes[i][1] + "}" + ": " + treeCounter);
         }
         System.out.println("Result: " + result);
-
     }
 }
