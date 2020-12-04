@@ -1,10 +1,10 @@
-import java.io.BufferedOutputStream;
-import java.io.PrintWriter;
+
+import java.util.Scanner;
 
 public class Day2 {
 
     public static void main(String[] args) {
-        MyScanner sc = new MyScanner();
+        Scanner sc = new Scanner(System.in);
         int validPasswords1 = 0;
         int validPasswords2 = 0;
 

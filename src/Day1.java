@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 public class Day1 {
@@ -7,7 +6,7 @@ public class Day1 {
 
         List<Integer> input = new ArrayList<>();
 
-        MyScanner sc = new MyScanner();
+        Scanner sc = new Scanner(System.in);
 
         while (true) {
             try{

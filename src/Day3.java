@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Day3 {
 
     public static void main(String[] args) {
-        MyScanner sc = new MyScanner();
+        Scanner sc = new Scanner(System.in);
 
         List<String> map = new ArrayList<>();
 
