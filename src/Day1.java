@@ -11,7 +11,7 @@ public class Day1 {
         while (true) {
             try{
                 input.add(sc.nextInt());
-            } catch (NumberFormatException | NullPointerException exception) {
+            } catch (Exception exception) {
                 break;
             }
         }

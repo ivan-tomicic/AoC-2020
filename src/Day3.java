@@ -29,7 +29,6 @@ public class Day3 {
                 if(map.get(down).charAt(right) == '#') {
                     treeCounter++;
                 }
-                System.out.println(right + "    " + down);
                 right = (right + slopes[i][0]) % columns;
             }
             result *= treeCounter;
