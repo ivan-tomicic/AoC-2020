@@ -25,7 +25,7 @@ public class Day7 {
             bagsMap.put(bag, containedBags);
         }
         System.out.println(bagsMap);
-        Set<String> bagsThatContain = new TreeSet<>();
+        Set<String> bagsThatContain = new LinkedHashSet<>();
         getBagsThatContain("shiny gold", bagsThatContain);
         System.out.println("Number of bags that contain shiny gold: " + bagsThatContain.size());
 
@@ -56,6 +56,4 @@ public class Day7 {
         }
         return number;
     }
-
-
 }
