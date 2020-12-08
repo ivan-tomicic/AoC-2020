@@ -7,7 +7,7 @@ public class Day6 {
         int unionSum = 0, intersectionSum = 0;
 
         Scanner sc = new Scanner(System.in);
-        Set<Character> unionSet = new TreeSet<>();
+        Set<Character> unionSet = new LinkedHashSet<>();
 
         Set<Character> intersectionSet = alphabet.chars().mapToObj(e -> (char)e).collect(Collectors.toSet());
 
