@@ -16,7 +16,7 @@ public class Day9 {
         for(int i = 25; i < array.size(); i++) {
             if(!checkValid(i)) {
                 System.out.println("Invalid number is: " + array.get(i));
-                System.out.println("Sum of min and max of the contiguous set is: " + findContiguousSet(i));
+                System.out.println("Sum of min and max of the contiguous set is: " + getMinPlusMaxOfContiguousSet(i));
                 break;
             }
         }
@@ -30,7 +30,7 @@ public class Day9 {
         }
         return false;
     }
-    static long findContiguousSet(int index) {
+    static long getMinPlusMaxOfContiguousSet(int index) {
         int start = 0, end = 1;
         long sum = array.get(0);
         long number = array.get(index);
