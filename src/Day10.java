@@ -34,10 +34,10 @@ public class Day10 {
            if (input.get(i) - tempList.get(tempList.size() - 1) < 3) {
                tempList.add(input.get(i));
            } else {
-               LinkedHashSet<List<Integer>> e = new LinkedHashSet<>();
+               LinkedHashSet<List<Integer>> setOfLists = new LinkedHashSet<>();
 
-               count(tempList, e);
-               waysToConnect *= e.size();
+               count(tempList, setOfLists);
+               waysToConnect *= setOfLists.size();
 
                tempList = new ArrayList<>();
                tempList.add(input.get(i));
@@ -46,14 +46,14 @@ public class Day10 {
         System.out.println(waysToConnect);
     }
 
-    static void count(List<Integer> list, LinkedHashSet<List<Integer>> e) {
-        e.add(list);
+    static void count(List<Integer> list, LinkedHashSet<List<Integer>> setOfLists) {
+        setOfLists.add(list);
         for(int i = 1; i < list.size() - 1; i++) {
             if(list.get(i + 1) - list.get(i - 1) <= 3) {
                 List<Integer> temp = new ArrayList<>(list);
                 temp.remove(i);
-                e.add(temp);
-                count(temp, e);
+                setOfLists.add(temp);
+                count(temp, setOfLists);
             }
         }
     }
