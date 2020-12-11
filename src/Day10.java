@@ -24,7 +24,6 @@ public class Day10 {
 
 
         //part 2
-        //works in O(n!)  :(
         long waysToConnect = 1;
 
         List<Integer> tempList = new ArrayList<>();
