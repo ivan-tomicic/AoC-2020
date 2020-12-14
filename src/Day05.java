@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Day5 {
+public class Day05 {
     public static void main(String[] args) {
 
         List<Integer> seats = new ArrayList<>();

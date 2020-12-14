@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
-public class Day9 {
+public class Day09 {
 
     static List<Long> array = new ArrayList<>();
 

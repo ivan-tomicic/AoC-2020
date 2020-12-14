@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Day6 {
+public class Day06 {
     public static void main(String[] args) {
         String alphabet = "abcdefghijklmnoprstuvzxyqw";
         int unionSum = 0, intersectionSum = 0;

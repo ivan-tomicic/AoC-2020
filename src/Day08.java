@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Day8 {
+public class Day08 {
 
     static int acc;
     static List<String> input = new ArrayList<>();

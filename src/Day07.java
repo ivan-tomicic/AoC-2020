@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Day7 {
+public class Day07 {
 
     static Map<String, Map<String, Integer>> bagsMap;
 
