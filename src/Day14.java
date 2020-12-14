@@ -10,6 +10,7 @@ public class Day14 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("KURAC");
         String mask = sc.nextLine().split("\\s+")[2];
         input.put(mask, new LinkedHashMap<>());
 
@@ -43,6 +44,7 @@ public class Day14 {
                     else if(mask.charAt(35 - i) == 'X') changedNumber += value & (1L << i);
                 }
                 memory.put(position, changedNumber);
+
             }
         }
 

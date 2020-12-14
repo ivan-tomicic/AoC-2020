@@ -53,8 +53,10 @@ public class Day12 {
             }
 
         }
-        System.out.println("Manhattan distance: " + (Math.abs(north) + Math.abs(east)));
+        System.out.println("Manhattan distance (part1): " + (Math.abs(north) + Math.abs(east)));
 
+
+        //part2
         north = 0; east = 0;
         for(String s : instructions) {
             int value = Integer.parseInt(s.split("[a-zA-Z]")[1]);
@@ -110,12 +112,9 @@ public class Day12 {
                     }
                     break;
             }
-            System.out.println("wE: " + wayPointEast + " wN: " + wayPointNorth);
-            System.out.println("east: " + east + " north: " + north);
-            System.out.println();
         }
 
-        System.out.println((Math.abs(north) + Math.abs(east)));
+        System.out.println("Manhattan distance (part1): " + (Math.abs(north) + Math.abs(east)));
 
 
     }
