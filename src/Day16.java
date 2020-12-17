@@ -99,6 +99,7 @@ public class Day16 {
                 }
             }
         }
+        //System.out.println(possibleColumns);
 
         //assigns each field a column, always trying to assign it to the column that
         //has minimum possible columns
