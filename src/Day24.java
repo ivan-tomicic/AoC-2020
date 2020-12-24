@@ -15,6 +15,7 @@ public class Day24 {
     //  /\        below
     // /  \
     ///    \
+    // blackTile = true, white = false (at the start all tiles are white)
     static boolean[][] tiles = new boolean[Xmax][Ymax];
 
     public static void main(String[] args) {
